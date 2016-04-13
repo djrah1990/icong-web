@@ -1,0 +1,43 @@
+{
+  "name": "icongjs",
+  "version": "0.1.0",
+  "author": {
+    "name": "iCong"
+  },
+  "description": "JavaScript library for visual programming",
+  "keywords": [
+  ],
+  "homepage": "http://icong.kr",
+  "private": true,
+  "license": [
+    "MIT",
+    "ENTRY"
+  ],
+  "ignore": [
+    "**/.*",
+    "_assets",
+    "node_modules",
+    "bower_components",
+    ".bower.json",
+    "build",
+    "docs",
+    "examples",
+    "extras",
+    "icon.png",
+    "LICENSE.txt",
+    "README.md",
+    "src",
+    "tests",
+    "VERSIONS.txt",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1",
+    "jquery-ui": "1.10.4",
+    "underscore": "1.8.3",
+    "PreloadJS": "0.6.0",
+    "EaselJS": "0.8.0",
+    "SoundJS": "0.6.0",
+    "webfontloader": "1.5.2"
+  }
+}

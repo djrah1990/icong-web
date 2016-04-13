@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>entryjs example page</title>
+  <meta charset="utf-8">
+  <link rel='stylesheet' href='../extern/entry/entry.css'>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<section class="wrapper">
+  <div id="workspace">
+  </div>
+</section>
+
+<!--Jquery -->
+<script src="../bower_components/jquery/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+<!--underscore -->
+<script src="../bower_components/underscore/underscore-min.js"></script>
+
+<!--language-->
+
+<!--canvas input-->
+<script src="../extern/util/CanvasInput.js"></script>
+
+<!--Blockly-->
+<script src="../extern/blockly/blockly_compressed.js"></script>
+<script src="../extern/blockly/msg/js/ko.js"></script>
+
+<!--createjs-->
+<script src="../bower_components/PreloadJS/lib/preloadjs-0.6.0.min.js"></script>
+<script src="../bower_components/EaselJS/lib/easeljs-0.8.0.min.js"></script>
+<script src="../bower_components/SoundJS/lib/soundjs-0.6.0.min.js"></script>
+<script src="../bower_components/SoundJS/lib/flashaudioplugin-0.6.0.min.js"></script>
+<script src="../extern/util/ndgmr.Collision.js"></script>
+<script src="../extern/util/handle.js"></script>
+
+<!--entryjs-->
+<script src="../bower_components/webfontloader/src/core/webfont.js"></script>
+<script src="../extern/util/ko.js"></script>
+<script src="../extern/util/static.js"></script>
+<script src="../extern/entry/entry.js"></script>
+
+<!--main script-->
+<script>
+  $(document).ready(function () {
+    var initOption = {
+      type: 'workspace',
+      libDir: '../../'
+    }
+    Entry.init(
+        document.getElementById('workspace'),
+        initOption
+    );
+    Entry.playground.setBlockMenu();
+    Entry.enableArduino();
+    Entry.loadProject();
+  });
+</script>
+
+</body>
